@@ -440,6 +440,7 @@ function formValid() {
       document
         .getElementById("nameAlert")
         .classList.replace("d-block", "d-none");
+      submitBtnDisabled();
     } else {
       document
         .getElementById("nameAlert")
@@ -452,6 +453,7 @@ function formValid() {
       document
         .getElementById("emailAlert")
         .classList.replace("d-block", "d-none");
+      submitBtnDisabled();
     } else {
       document
         .getElementById("emailAlert")
@@ -464,6 +466,7 @@ function formValid() {
       document
         .getElementById("phoneAlert")
         .classList.replace("d-block", "d-none");
+      submitBtnDisabled();
     } else {
       document
         .getElementById("phoneAlert")
@@ -475,6 +478,7 @@ function formValid() {
       document
         .getElementById("ageAlert")
         .classList.replace("d-block", "d-none");
+      submitBtnDisabled();
     } else {
       document
         .getElementById("ageAlert")
@@ -486,6 +490,7 @@ function formValid() {
       document
         .getElementById("passwordAlert")
         .classList.replace("d-block", "d-none");
+      submitBtnDisabled();
     } else {
       document
         .getElementById("passwordAlert")
@@ -497,12 +502,15 @@ function formValid() {
       document
         .getElementById("repasswordAlert")
         .classList.replace("d-block", "d-none");
+      submitBtnDisabled();
     } else {
       document
         .getElementById("repasswordAlert")
         .classList.replace("d-none", "d-block");
     }
   });
+}
+function submitBtnDisabled() {
   if (
     nameValid() &&
     emailValid() &&
